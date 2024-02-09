@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(80, 55, 55);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            color:whitesmoke ;
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: lawngreen ;
+            font-size: 1.05rem;
+            
+        }
+        .left{
+            font-size: 1.5em;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            text-align: center;
+            align-items: center;
+
+        }
+        .firstSection div{
+            width: 30%;
+        }
+
+        .leftSection{
+           
+            font-size: 3rem;
+            margin: 30px;
+            justify-content;
+            text-align: center;
+        }
+        .rightSection img{
+            margin: 100px 20px;
+            width: 80%;
+
+
+        }
+        .purple{
+            color: blueviolet;
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: purple;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        main hr{
+            border: 0;
+            background: violet;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+         .secondSection .box{
+            background: white;
+            width: 80vw;
+            height:2px;
+            margin: 55px 0;
+            display: flex;
+
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width:1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -20px;
+            left: -2px;
+
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+        .vertical-desc{
+            position:relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Dipesh's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <a href="/"><li>Home</a></li>
+                <a href="/"><li>About</a></li>
+                <a href="/"><li>Services</a></li>
+                <a href="/"><li>Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Dipesh</span> and I am a passionate
+            <span id="element"></span>
+            </div>
+    
+            <div class="rightSection">
+                <img src="p.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae nihil, porro quos, deserunt consectetur cumque, reprehenderit aliquam officia eligendi excepturi tempora nobis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae nihil, porro quos, deserunt consectetur cumque, reprehenderit aliquam officia eligendi excepturi tempora nobis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer(2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae nihil, porro quos, deserunt consectetur cumque, reprehenderit aliquam officia eligendi excepturi tempora nobis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.jpg" alt="">
+                    <div class="vertical-title">
+                        Node JS Developer(2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae nihil, porro quos, deserunt consectetur cumque, reprehenderit aliquam officia eligendi excepturi tempora nobis?
+                    </div>
+                    
+                </div>
+               
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','Video Editor','Graphic Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+    
+</body>
+</html>
